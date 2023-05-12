@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlcoCalendar</string>
+    <string-array name="drinking_degree">
+        <item>жёстко нахуярился(ась)</item>
+        <item>нормально посидел(а)</item>
+        <item>ну так расслабился(ась)</item>
+    </string-array>
+</resources>

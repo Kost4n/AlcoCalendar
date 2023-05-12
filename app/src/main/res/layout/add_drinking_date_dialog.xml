@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_dialog_textview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Выберете насколько вы напились"
+            android:layout_marginTop="5dp"/>
+    <EditText
+            android:id="@+id/write_alco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/add_dialog_textview"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/spinner_degree"
+            android:hint="Что пил"
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:textSize="14dp" android:layout_marginLeft="32dp"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/write_alco"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_dialog_textview"
+            android:id="@+id/spinner_degree"
+            android:layout_marginTop="20dp" android:layout_marginRight="32dp"/>
+<!--    <EditText-->
+<!--            android:id="@+id/write_location"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/add_dialog_textview"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/write_alco"-->
+<!--            app:layout_constraintRight_toLeftOf="@id/spinner_degree"-->
+<!--            android:hint="Где пил"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:inputType="text"-->
+<!--            android:textSize="14dp" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
